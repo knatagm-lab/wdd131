@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Karen Natalia Gaviria Mariaca</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Karen Natalia Gaviria Mariaca. Personal homepage with information about me and helpful web development resources.">
+    <meta name="author" content="Karen Natalia Gaviria Mariaca">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    
 </head>
+
 <body>
-    <h1>Hello Wdd 131</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/karen-natalia-gaviria-mariaca-b07089392/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=spa&id=p23-p27#p23" target="_blank">Scripture</a></li>
+                <li><a href="finalproject/index.html" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Karen Natalia Gaviria Mariaca</h1>
+
+        <div class="cards">
+
+            <section class="card">
+
+                <h2>About Me</h2>
+                
+                <div class="about">
+
+                    <div class="bio">
+                        <p>
+                            My name is Karen Natalia Gaviria Mariaca. I am from Colombia, South America. I am a student at BYU-Idaho, and I am currently studying Software Development. I have a passion for technology and enjoy learning new skills in this field.
+                        </p>
+                    </div>
+
+                    <img src="images/profile.jpeg" alt="Profile Image of Karen Gaviria" width="180" height="180" class="profile-image">
+                </div>
+
+                <div class="country-title">
+                    <h3>Colombia</h3>
+                    <hr>
+                </div>
+
+                <div class="country">
+                    <figure>
+                        <img src="images/flag_of_colombia.jpg" alt="Official Flag of Colombia" width="180" height="120">
+                        <figcaption>Official Flag of Colombia</figcaption>
+                    </figure>
+
+                    <p>
+                        Colombia is a country located in the northwestern part of South America. It is known for its diverse culture, beautiful landscapes, and rich history. The country has a population of over 50 million people and is famous for its coffee, music, and dance.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+
+                <h2>Web Dev Resources</h2>
+
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                    <li><a href="https://dev.to/" target="_blank">DEV Community</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                    <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+
+                </ul>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Karen Natalia Gaviria Mariaca - Colombia 
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
+
 </html>
