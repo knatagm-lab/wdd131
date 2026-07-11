@@ -12,13 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Temple Album</h1>
+        <span class="title">Temple Album</span>
+
+        <button id="menu" aria-label="Toggle menu">☰</button>
 
         <nav>
             <ul>
@@ -34,14 +37,51 @@
 
     <main>
         <h1>Home</h1>
-
+        <div class="gallery">
         <figure>
-            <img src="images/temple1.jpg" alt="Temple 1">
-            <figcaption>Temple 1</figcaption>
+            <img src="images/temple1.jpeg" alt="Albuquerque New Mexico Temple">
+            <figcaption>Albuquerque New Mexico Temple</figcaption>
         </figure>
+        <figure>
+            <img src="images/temple2.jpeg" alt="Barcelona Spain Temple">
+            <figcaption>Barcelona Spain Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple3.jpeg" alt="Berna Switzerland Temple">
+            <figcaption>Berna Switzerland Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple4.jpeg" alt="Belo Horizonte Brazil Temple">
+            <figcaption>Belo Horizonte Brazil Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple5.jpeg" alt="Chicago Illinois Temple">
+            <figcaption>Chicago Illinois Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple6.jpeg" alt="Copenhagen Denmark Temple">
+            <figcaption>Copenhagen Denmark Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple7.jpeg" alt="Hong Kong China Temple">
+            <figcaption>Hong Kong China Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/temple8.jpeg" alt="Guatemala City Guatemala Temple">
+            <figcaption>Guatemala City Guatemala Temple</figcaption>
+        </figure>
+         <figure>
+            <img src="images/temple9.jpeg" alt="Barranquilla Colombia Temple">
+            <figcaption>Barranquilla Colombia Temple</figcaption>
+        </figure>
+        </div>
+  
     </main>
-    <footer></footer>
 
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Karen Natalia Gaviria Mariaca - Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
     
 </body>
 </html>
