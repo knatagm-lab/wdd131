@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia</title>
+    <meta name="description" content="WDD 131 - Country Page">
+    <meta name="author" content="Karen Natalia Gaviria Mariaca">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Caño Cristales - Colombia</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Colorful river at Caño Cristales, Meta, Colombia" width="1500" height="750">
+            </picture>
+
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+
+            <p><strong>Country:</strong> Colombia</p>
+            <p><strong>Department:</strong> Meta</p>
+            <p><strong>Municipality:</strong> La Macarena</p>
+            <p><strong>Region:</strong> Serania de la Macarena</p>
+            <p><strong>River:</strong> Caño Cristales</p>
+            <p><strong>Known as:</strong> River of Five Colors</p>
+            <p><strong>Elevation:</strong> 200m</p>
+            <p><strong>Best Season:</strong> June to November</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/sunny.svg" alt="Sunny Weather" class="weather-icon">
+
+            <p><strong>Temperature:</strong> 28°C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Humidity:</strong> 78%</p>
+            <p><strong>Wind:</strong> 10 Km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Karen Natalia Gaviria Mariaca - Colombia </p>
+        <p id="lastModified"></p>
+
+    </footer>
+    
+</body>
+</html>
