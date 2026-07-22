@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lazy Load Activity</title>
+    <meta name="author" content="Karen Natalia Gaviria Mariaca">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
 </head>
+
 <body>
+
+    <header>
+        <h1>Lazy Load demonstration</h1>
+    </header>
+
     <main>
-        <h1></h1>
+        <picture>
+            <img src="https://images.unsplash.com/photo-1784296868311-6ec322ac4673?q=80&w=1189&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Placeholder Art Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://media.istockphoto.com/id/2179312082/vector/nice-watercolor-painting-three-coconut-trees-indian-hand-painted-watercolor-art-created-with.webp?a=1&b=1&s=612x612&w=0&k=20&c=oPto99A-cl3zFkRiVIREjeYYL9jAVkgMe371f4JmdsM=" 
+            alt="Placeholder Art Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://media.istockphoto.com/id/655913506/vector/mountain-river.webp?a=1&b=1&s=612x612&w=0&k=20&c=nwsoi71zYJnC62LukWibq-cOhPAlCYJANulgEyj_qqo=" 
+            alt="Placeholder Art Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://media.istockphoto.com/id/1309457295/vector/palm-trees-and-road-watercolor-image.webp?a=1&b=1&s=612x612&w=0&k=20&c=PCEE5n-NuGU7tenqoWoA3qksd83boagB9Tkx7gbshYI=" 
+            alt="Placeholder Art Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://images.unsplash.com/photo-1784109920491-14f584c4de39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D" 
+            alt="Placeholder Art Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://plus.unsplash.com/premium_photo-1752154759509-f2af2a5a886f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D" 
+            alt="Placeholder Art Image" loading="lazy" width="400" height="600">
+        </picture>
     </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Karen Natalia Gaviria Mariaca - Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
