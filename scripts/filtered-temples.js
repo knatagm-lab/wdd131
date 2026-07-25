@@ -82,7 +82,7 @@ const temples = [
 ];
 
 function displayTemples(temples) {
-    const container = document.querySelector("main")
+    const container = document.querySelector(".gallery")
     container.innerHTML = "";
     temples.forEach((temple) => {
         const card = document.createElement("section");
@@ -94,13 +94,13 @@ function displayTemples(temples) {
         location.innerHTML = `<strong>Location:</strong> ${temple.location}`;
 
         const dedicated = document.createElement("p");
-        location.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
+        dedicated.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
 
         const area = document.createElement("p");
-        location.innerHTML = `<strong>Area:</strong> ${temple.area.toLocalesString()} sq ft`;
+        area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
 
         const image = document.createElement("img")
-        image.setAttribute("scr", temple.imageUrl);
+        image.setAttribute("src", temple.imageUrl);
         image.setAttribute("alt", temple.templeName);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "400");
@@ -113,7 +113,77 @@ function displayTemples(temples) {
         card.appendChild(image);
 
         container.appendChild(card);
-
-        displayTemples(temples);
     });
 }
+
+const pageTitle = document.querySelector("#page-title");
+
+displayTemples(temples);
+
+document.querySelector("#home").addEventListener("click", (event) => {
+  event.preventDefault(); 
+
+  pageTitle.textContent = "Home"
+  displayTemples(temples);
+
+});
+
+document.querySelector("#old").addEventListener("click", (event) => {
+  event.preventDefault(); 
+
+  const oldTemples = temples.filter((temple) => {
+    const year = parseInt(temple.dedicated);
+    return year < 1900;
+  });
+
+  pageTitle.textContent = "Old Temples"
+  displayTemples(oldTemples);
+});
+
+document.querySelector("#new").addEventListener("click", (event) => {
+  event.preventDefault(); 
+
+  const newTemples = temples.filter((temple) => {
+    const year = parseInt(temple.dedicated);
+    return year > 2000;
+  });
+
+  pageTitle.textContent = "New Temples"
+  displayTemples(newTemples);
+});
+
+document.querySelector("#large").addEventListener("click", (event) => {
+  event.preventDefault(); 
+
+  const largeTemples = temples.filter((temple) => {
+    return temple.area > 90000;
+  });
+
+  pageTitle.textContent = "Large Temples"
+  displayTemples(largeTemples);
+});
+
+document.querySelector("#small").addEventListener("click", (event) => {
+  event.preventDefault(); 
+
+  const smallTemples = temples.filter((temple) => {
+    return temple.area < 10000;
+  });
+
+  pageTitle.textContent = "Small Temples"
+  displayTemples(smallTemples);
+
+});
+
+const menuButton = document.getElementById("menu");
+const navigation = document.querySelector("nav");
+
+menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+
+    if (navigation.classList.contains("open")) {
+        menuButton.textContent = "✖";
+    } else {
+        menuButton.textContent = "☰";
+    }
+});
