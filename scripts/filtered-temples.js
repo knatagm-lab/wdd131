@@ -100,5 +100,20 @@ function displayTemples(temples) {
         location.innerHTML = `<strong>Area:</strong> ${temple.area.toLocalesString()} sq ft`;
 
         const image = document.createElement("img")
+        image.setAttribute("scr", temple.imageUrl);
+        image.setAttribute("alt", temple.templeName);
+        image.setAttribute("loading", "lazy");
+        image.setAttribute("width", "400");
+        image.setAttribute("height", "250");
+
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedicated);
+        card.appendChild(area);
+        card.appendChild(image);
+
+        container.appendChild(card);
+
+        displayTemples(temples);
     });
 }
