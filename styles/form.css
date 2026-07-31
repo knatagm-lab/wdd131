@@ -20,5 +20,76 @@ footer {
 }
 
 header h1 {
-    font-family: M;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 15);
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: .7rem;
+    margin-top: .4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: .5rem;
+}
+
+input[type="radio"] {
+    margin-right: .3rem;
+}
+
+input[type="submit"] {
+    background-color: #FCD116;
+    color: #003049;
+    border: none;
+    padding: .9rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e6be0f;
+}
+
+footer p {
+    margin: .3rem 0;
+}
+
+#lastModified {
+    color: #FCD116;
 }
