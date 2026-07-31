@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Album</title>
+    <meta name="description" content="Review page form">
+    <meta name="author" content="Karen Natalia Gaviria Mariaca">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <div>
+                <label for="productName">Product Name</label>
+
+                <select id="productName" name="productName" required>
+                    <option value="" selected disabled>Select a Product ...</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Overall Rating</p>
+                    <label><input type="radio" id="one" name="rating" value="1" required>⭐</label>
+                    <label><input type="radio" id="two" name="rating" value="2" required>⭐⭐</label>
+                    <label><input type="radio" id="three" name="rating" value="3" required>⭐⭐⭐</label>
+                    <label><input type="radio" id="four" name="rating" value="4" required>⭐⭐⭐⭐</label>
+                    <label><input type="radio" id="five" name="rating" value="5" required>⭐⭐⭐⭐⭐</label>
+            </div>
+
+            <div>
+                <label>Date of installation<input type="date" id="installationDate" name="installationDate" required></label>
+            </div>
+
+            <div>
+            <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+            <label><input type="checkbox" id="easeOfUse" name="features" value="Ease of Use"> Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+            <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+            </div>
+
+            <div>
+                <label>Written Review (Optional)<textarea id="review" name="review" rows="5" cols="40"></textarea></label>
+            </div>
+
+            <div>
+                <label>Your Name (Optional)<input type="text" id="userName" name="userName"></textarea></label>
+            </div>
+
+            <div>
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Karen Natalia Gaviria Mariaca - Colombia </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
