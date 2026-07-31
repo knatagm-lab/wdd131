@@ -93,3 +93,14 @@ footer p {
 #lastModified {
     color: #FCD116;
 }
+
+@media screen and (min-width:768px) {
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    form {
+        padding: 2rem;
+    }
+}
