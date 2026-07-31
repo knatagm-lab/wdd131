@@ -34,30 +34,49 @@
 
             <div>
                 <p>Overall Rating</p>
-                    <label><input type="radio" id="one" name="rating" value="1" required>⭐</label>
-                    <label><input type="radio" id="two" name="rating" value="2" required>⭐⭐</label>
-                    <label><input type="radio" id="three" name="rating" value="3" required>⭐⭐⭐</label>
-                    <label><input type="radio" id="four" name="rating" value="4" required>⭐⭐⭐⭐</label>
-                    <label><input type="radio" id="five" name="rating" value="5" required>⭐⭐⭐⭐⭐</label>
+                    <input type="radio" id="one" name="rating" value="1" required>
+                    <label for="one">⭐</label>
+
+                    <input type="radio" id="two" name="rating" value="2" required>
+                    <label for="two">⭐⭐</label>
+
+                    <input type="radio" id="three" name="rating" value="3" required>
+                    <label for="three">⭐⭐⭐</label>
+
+                    <input type="radio" id="four" name="rating" value="4" required>
+                    <label for="four">⭐⭐⭐⭐</label>
+                    
+                    <input type="radio" id="five" name="rating" value="5" required>
+                    <label for="five">⭐⭐⭐⭐⭐</label>
             </div>
 
             <div>
-                <label>Date of installation<input type="date" id="installationDate" name="installationDate" required></label>
+                <label for="installationDate">Date of installation</label>
+                <input type="date" id="installationDate" name="installationDate" required>
             </div>
 
             <div>
-            <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
-            <label><input type="checkbox" id="easeOfUse" name="features" value="Ease of Use"> Ease of Use</label>
-            <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
-            <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+            <input type="checkbox" id="durability" name="features" value="Durability"> 
+            <label for="durability">Durability</label>
+
+            <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use"> 
+            <label for="easeOfUse">Ease of Use</label>
+
+            <input type="checkbox" id="performance" name="features" value="Performance"> 
+            <label for="performance">Performance</label>
+
+            <input type="checkbox" id="design" name="features" value="Design"> 
+            <label for="desing">Design</label>
             </div>
 
             <div>
-                <label>Written Review (Optional)<textarea id="review" name="review" rows="5" cols="40"></textarea></label>
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" rows="5" cols="40"></textarea>
             </div>
 
             <div>
-                <label>Your Name (Optional)<input type="text" id="userName" name="userName"></label>
+                <label for="userName">Your Name (Optional)</label>
+                <input type="text" id="userName" name="userName">
             </div>
 
             <div>
