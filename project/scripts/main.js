@@ -1,4 +1,4 @@
-document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
 const destinations = [
@@ -30,7 +30,7 @@ const destinations = [
         name: "Guatapé",
         image: "images/guatape.webp",
         alt: "Guatapé and El Peñon Rock",
-        description: "known for its vibrant streets and breathtaking views.",
+        description: "Known for its vibrant streets and breathtaking views.",
         
         highlights: [
             "El Peñon Rock",
@@ -61,7 +61,20 @@ const destinations = [
         "Unique rock formations",
         "Nature photography"
         ]
+    },
+    {
+        name: "Tayrona National Park",
+        image: "images/tayrona.webp",
+        alt: "Beach surrounded by tropical forest in Tayrona National Park",
+        description: "A stunning national park where tropical rainforest meets the Caribbean Sea, offering beautiful beaches and hiking trails.",
+    
+        highlights: [
+        "Caribbean beaches",
+        "Tropical rainforest",
+        "Hiking trails"
+        ]
     }
+    
 ];
 
 function displayDestinations () {
@@ -147,15 +160,11 @@ function loadDestinationOptions() {
 
 const contactForm = document.querySelector(".contact-form form");
 
-if(contactForm) {
-    contactForm.addEventListener("submit", saveContact);
-
 function saveContact(event) {
 
     event.preventDefault();
 
     const name = document.querySelector("#name").value;
-
     const destination = document.querySelector("#favoriteDestination").value;
 
     if (name === "") {
@@ -171,8 +180,11 @@ function saveContact(event) {
 
     message.style.display = "block";
 
-    contactForm.reset();
+    event.target.reset();
     }
+
+if (contactForm) {
+    contactForm.addEventListener("submit", saveContact);
 }
 
 const welcome = document.querySelector("#welcomeMessage");

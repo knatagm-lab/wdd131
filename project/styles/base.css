@@ -18,7 +18,7 @@ body {
     color: var(--text);
     line-height: 1.6;
 }
-
+/* ----------------- Header ---------------- */
 header {
     background-color: var(--primary);
     color: var(--white);
@@ -36,7 +36,7 @@ header p {
     font-size: 1.1rem;
     color: var(--accent);
 }
-
+/* ----------------- Navigation ---------------- */
 nav {
     background-color: var(--accent);
 }
@@ -60,18 +60,24 @@ nav a:hover {
     color: var(--white);
 }
 
+nav a.active {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
 } 
-
+/* ----------------- Hero ---------------- */
 .hero {
     position: relative;
 }
+
 .hero img {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -105,6 +111,8 @@ main {
     background: var(--white);
 }
 
+/* ----------------- Footer ---------------- */
+
 footer {
     background-color: var(--primary);
     color: var(--white);
@@ -126,7 +134,7 @@ footer a:hover {
 #lastModified {
     color: var(--accent);
 }
-
+/* ----------------- Featured Destinations ---------------- */
 .featured {
     max-width: 1200px;
     margin: 3rem auto;
@@ -138,7 +146,7 @@ footer a:hover {
     margin-bottom: 2rem;
     color: var(--primary);
 }
-
+/* ----------------- Home Cards ---------------- */
 #destinationCards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -184,7 +192,7 @@ footer a:hover {
 .card-content .button {
     display: inline-block;
 }
-
+/* ----------------- Destination Page ---------------- */
 .page-title {
     text-align: center;
     max-width: 800px;
@@ -252,25 +260,7 @@ footer a:hover {
 .destination-info li {
     margin-bottom: .5rem;
 }
-
-@media screen and (min-width: 768px) {
-    #destinationList section {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-}
-
-#confirmationMessage {
-    margin-top: 1.5rem;
-    padding: 1rem 1.5rem;
-    background: #eaf7ec;
-    border-left: 6px solid #2e7d32;
-    color: #1b4332;
-    border-radius: 8px;
-    font-size: 1rem;
-    display: none;
-}
-
+/* ----------------- Contact ---------------- */
 .contact-form {
     max-width: 700px;
     margin: 3rem auto;
@@ -290,7 +280,7 @@ footer a:hover {
 
 .contact-form label {
     display: block;
-    font-weight: block;
+    font-weight: bold;
     margin-bottom: .5rem;
     color: var(--primary);
 }
@@ -301,6 +291,7 @@ footer a:hover {
     width: 100%;
     padding: .8rem;
     border: 1px solid #ccc;
+    border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
 }
@@ -333,4 +324,42 @@ footer a:hover {
 
 .required {
     color: crimson;
+}
+
+#confirmationMessage {
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    background: #eaf7ec;
+    border-left: 6px solid #2e7d32;
+    color: #1b4332;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: none;
+}
+/* ----------------- Why Visit ---------------- */
+.why-visit {
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.why-visit h2 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.reasons {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.reasons article {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+}
+
+.reasons h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
 }
