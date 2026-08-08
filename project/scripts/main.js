@@ -91,7 +91,7 @@ function displayDestinations () {
 
             <p>${destination.description}</p>
 
-            <a href="destinations.html" class="button">Learn More</a>
+            <a href="destinations.html" class="button">Learn More about ${destination.name}</a>
         
         </div>
     `;
